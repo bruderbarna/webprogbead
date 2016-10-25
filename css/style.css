@@ -1,0 +1,29 @@
+#index-body {
+	background: url("../images/lostfent_4487.png");
+}
+#list-body {
+	background: url("../images/Lost_letters.jpg");
+}
+.btn-black {
+	color: #fff;
+	background-color: #000;
+}
+.btn.focus,
+.btn:focus,
+.btn:hover {
+	color: #eee;
+}
+.btn {
+	padding: 16px 24px;
+	font-family: 'Oswald';
+	font-size: 18px;
+	font-weight: 700;
+}
+#lostDropdown {
+	margin-top: 15px;
+	margin-right: 170px;
+}
+.gamer-list {
+	color: #fff;
+	margin-top: 100px;
+}
