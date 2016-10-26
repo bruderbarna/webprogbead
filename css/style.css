@@ -23,8 +23,9 @@ body {
 .footer-brand {
   font-size: 1.5em;
 }
-.footer .copyright {
+.footer p.copyright {
   color: #f8f8f8;
+  margin-bottom: 0;
   max-height: 50px;
   font-size: 1.0em;
   font-family: 'Oswald', sans-serif;
