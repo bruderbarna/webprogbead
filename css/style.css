@@ -49,3 +49,16 @@ h1, h2, h3, h4, h5, h6 {
   background: #393939;
   color: #f8f8f8;
 }
+
+.about-us-images {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.bike-item {
+  margin-bottom: 50px;
+}
+
+.bike-item.item-even {
+  text-align: right;
+}
