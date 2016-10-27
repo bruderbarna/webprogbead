@@ -86,6 +86,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .bike-item {
   margin-bottom: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #777777;
+}
+
+.bike-item:last-of-type {
+  border-bottom: none;
 }
 
 .bike-item.item-even {
