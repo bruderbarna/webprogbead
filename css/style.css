@@ -64,8 +64,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-header {
-  font-family: 'Lato', sans-serif;
-  font-size: 3.0em;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3.5em;
+  font-weight: 700;
   margin-bottom: 40px;
 }
 
@@ -96,4 +97,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .bike-item.item-even {
   text-align: right;
+}
+
+
+.gallery .gallery-row {
+  padding-bottom: 30px;
+}
+.gallery .gallery-row:last-of-type {
+  padding-bottom: 0;
+}
+.gallery .gallery-image {
+  cursor: pointer;
 }
