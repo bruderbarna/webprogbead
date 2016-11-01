@@ -1,22 +1,27 @@
-$(document).ready(function (  ) {
-  var gallery = $('.gallery');
-  var galleryImages = gallery.find('.gallery-item img.gallery-image');
-
-  galleryImages.each(function () {
-    //console.log($(this).attr('src'));
-    var image = $(this);
-
-    image.click(function () {
-      // TODO: open fullscreen gallery with left and right buttons
-    });
+$(document).ready(function () {
+  $('.gallery .gallery-image').click(function () {
+    if ($('#lightbox').length > 0) {
+      $('#content').html('<img src ="' + $(this).attr("src") + '">');
+      $('#lightbox').show('fast');
+      $('#navigation').hide();
+    }
+    else {
+      $('body').append(
+        '<div id="lightbox">' +
+          //'<p>Click to close</p>' +
+          '<div id="content">' +
+              '<img src="#" />' +
+          '</div>' +
+        '</div>'
+      );
+      $('#content').html('<img src ="' + $(this).attr("src") + '">');
+      $('#lightbox').show('fast');
+      $('#navigation').hide();
+    }
   });
 
-  /*
-  galleryItems.forEach(function (index, item) {
-    item.click(function () {
-      console.log(item.find('img.gallery-image').attr('src'));
-    });
+  $('#lightbox').on('click', function () {
+    $('#lightbox').hide();
+    $('#navigation').show();
   });
-  */
-
 });
