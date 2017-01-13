@@ -1,8 +1,5 @@
 $(document).ready(function () {
-  var isGalleryOpen = false;
-
   $('.gallery .gallery-image').click(function () {
-    console.log("gcl");
     if ($('#lightbox').length > 0) {
       $('#content').html('<img src ="' + $(this).attr("src") + '">');
       $('#lightbox').show('fast');
@@ -17,18 +14,15 @@ $(document).ready(function () {
           '<h3 class="close-button">click to close</h3>' +
         '</div>'
       );
+
+      $('#lightbox .close-button').on('click', function () {
+        $('#lightbox').hide('fast');
+        $('#navigation').show();
+      });
+
       $('#content').html('<img src ="' + $(this).attr("src") + '">');
       $('#lightbox').show('fast');
       $('#navigation').hide();
-      isGalleryOpen = true;
-    }
-  });
-
-  $('html').click(function () {
-    if (isGalleryOpen) {
-      $('#lightbox').hide('fast');
-      $('#navigation').show();
-      isGalleryOpen = false;
     }
   });
 });
